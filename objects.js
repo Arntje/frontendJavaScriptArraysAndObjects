@@ -1,13 +1,23 @@
 // ===  Opdracht 1 ===
 // Maak een object met daarin jouw voornaam (string), achternaam (string), leeftijd (getal) en geboortedatum (date object). De datum hoeft niet geformat te worden.
 // Log dit in de terminal.
-
-
+const personMe = {
+  firstName: "Arnt",
+  lastName: "Braakenburg enz.",
+  age: 50,
+  birthDate: {
+    day: 8,
+    month: "may",
+    year: 1970,
+  }
+}
+console.log("Naam: " + personMe.firstName + " " + personMe.lastName);
+console.log("Geboortedatum: " + personMe.birthDate.day + " " + personMe.birthDate.month + " " + personMe.birthDate.year);
 // ===  Opdracht 2 ===
 // Zorg ervoor dat de volgende string in de terminal wordt gelogd:
 // "Hoi! Ik ben <voornaam>, ik ben <leeftijd> jaar oud."
-
-
+const begroeting = "Hoi! Ik ben " + personMe.firstName + ", ik ben " + personMe.age + " jaar oud."
+console.log(begroeting);
 // === Opdracht 3: bekijk het volgende object ===
 
 const product = {
